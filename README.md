@@ -1,6 +1,6 @@
 ## usersテーブル
 |Column|Type|Option|
-|:------|:----|:------|
+|:-------|:------|:--------|
 |name|string|null: false|
 |email|string|null: false|
 |password|string|null: false|
@@ -11,7 +11,7 @@
 
 ## groupsテーブル
 |Column|Type|Option|
-|:-----|:---|:-----|
+|:-------|:-----|:-------|
 |name|string|null: false, unique: true|
 ### Association
 - has_many: users, though: :users_groups
