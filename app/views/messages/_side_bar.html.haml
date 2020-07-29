@@ -1,0 +1,15 @@
+.SideBar
+  .SideHeader
+    .SideHeader__contents
+      .SideHeader__contents__name masa
+      %ul.SideHeader__contents__items
+        %li.SideHeader__contents__items--new
+          = link_to "#", class: "New-icon-btn" do
+            = icon('fas', 'edit', class: "New-icon")
+        %li.SideHeader__contents__items--edit
+          = link_to "#", class: "Edit-icon-btn" do
+            = icon('fas', 'cog', class: "Edit-icon")
+  .Groups
+    .Group
+      .Group__name techcamp
+      .Group__message まだメッセージはありません
