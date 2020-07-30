@@ -2,13 +2,13 @@
   .SideHeader
     .SideHeader__contents
       .SideHeader__contents__name masa
-      %ul.SideHeader__contents__items
-        %li.SideHeader__contents__items--new
-          = link_to "#", class: "New-icon-btn" do
-            = icon('fas', 'edit', class: "New-icon")
-        %li.SideHeader__contents__items--edit
-          = link_to "#", class: "Edit-icon-btn" do
-            = icon('fas', 'cog', class: "Edit-icon")
+      %ul.SideHeader__contents__icons
+        %li.SideHeader__contents__icon
+          = link_to "#" do
+            = icon('fas', 'edit', class: "SideHeader__contents__icon--new")
+        %li.SideHeader__contents__icon
+          = link_to "#" do
+            = icon('fas', 'cog', class: "SideHeader__contents__icon--edit")
   .Groups
     .Group
       .Group__name techcamp
