@@ -46,9 +46,11 @@
       &__name {
         font-size: 15px;
         margin-bottom: 5px;
+        color: #ffffff;
       }
       &__message {
         font-size: 11px;;
+        color: #ffffff;
       }
     }
   }
@@ -95,6 +97,7 @@
     height: calc(100vh - 190px);
     background-color: #fafafa;
     padding: 35px 0 0 40px;
+    overflow: scroll;
     .Message {
       margin-bottom: 46px;
       &__info {
@@ -114,6 +117,9 @@
       &__content {
         color: #434a54;
         font-size: 14px;
+      }
+      &__image {
+        height: 200px;
       }
     }
   }
