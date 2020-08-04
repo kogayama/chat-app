@@ -52,6 +52,13 @@ $(function(){
     })
     .done(function(data){
       let html = buildHTML(data);
+      $('.Messages').append(html);
+      $('form')[0].reset();
+      $('.Messages').animate({ scrollTop: $('.Messages')[0].scrollHeight});
+      $('.Send-btn').prop('disabled', false);
+    })
+    .fail(function(){
+      alert('メッセージ送信に失敗しました')
     })
   });
 });
