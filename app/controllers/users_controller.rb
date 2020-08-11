@@ -1,7 +1,12 @@
 class UsersController < ApplicationController
 
   def index
+<<<<<<< HEAD
+    return nil if params[:keyword] == " "
+    @users = User.where('name LIKE(?)', "%#{params[:keyword]}%" ).where.not(id: current_user.id)
+=======
     @users = User.search(params[:keyword], current_user.id)
+>>>>>>> master
     respond_to do |format|
       format.html
       format.json
